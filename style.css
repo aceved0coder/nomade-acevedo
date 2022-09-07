@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+ }
+ 
+ html{
+   font-size: 92.5%;
+}
+
+body{
+    background-image: url(../imagenes/background-blue.webp);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.container{
+   height: 100vh;
+   display: grid;
+   grid-template-columns: 1fr 0.5fr 0.5fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1.5fr 1fr 1fr 1fr;
+   grid-template-areas:"header header header header header header"
+   "main main main main main main"
+   "section section section section section section"
+   "section-dos section-dos section-dos section-dos section-dos section-dos"
+   "section-tres section-tres section-tres section-tres section-tres section-tres"
+   "footer footer footer footer footer footer";
+}
+
+header{
+   grid-area: header;
+}
+
+main{
+   grid-area: main;
+}
+
+section{
+   grid-area: section;
+}
+
+.section-dos{
+   grid-area: section-dos;
+}
+
+.section-tres{
+   grid-area: section-tres;
+}
+
+footer{
+   grid-area: footer;
+}
+.encabezado__img--fluid{
+   width: 5%;
+}
+
+ul {
+   list-style: none;
+   background-color: rgb(135, 172, 235);
+   font-size: 0;
+   padding: 10px;
+ }
+
+li {
+   display: inline-block;
+   width: 19%;
+   position:relative;
+   font-size: large;
+}
+
+ul ul {
+      position: absolute;
+      display: none;
+   }
+
+   ul ul li {
+       display: block;
+      }
+
+   ul li:hover ul {
+         display:block;
+      }
+
+a{
+   color: rgba(6, 3, 46, 0.397);
+   text-decoration: none;
+   font-size: large;
+}
+
+a:hover{
+   color: black;
+}
+
+   #principal .galeria{
+      margin-top: auto;
+      display: flex;
+      justify-content: center;
+      background-image: url(../imagenes/background-blue.webp);
+   }
+   
+   #principal .galeria figure{
+      text-align: center;
+      width:100%;
+   }
+   
+   #principal .galeria figure img{
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 100%;
+   }
+   
+   .titulo__oportunidades{
+      text-align: center;
+      font-size: xx-large;
+      color: blue;
+   }
+   #bodas .beneficio{
+      margin:auto;
+      display: flex;
+      justify-content: space-between;
+      background-image: url(../imagenes/background-blue.webp);
+   }
+   
+   #bodas .beneficio figure{
+      text-align: center;
+      width:100%;
+   }
+   
+   #bodas .beneficio figure img{
+      border-left: 10px;
+      border-right: 10px;
+      width: 100%;
+   }
+   
+   .section-dos .galerias{
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      background-image: url(../imagenes/background-blue.webp);
+   }
+   
+   .section-dos .galerias figure{
+      text-align: center;
+      width:25%;
+   }
+   
+   .section-dos .galerias figure img{
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      width: 100%;
+   }
+
+   .section-dos .galerias figcaption{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    padding: 15px 0;
+    align-self: center;
+   }
+
+   .section-dos .galerias p.benefit{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    color: #000000;
+    padding-bottom: 10px;
+    background-color: white;
+    align-self: center;
+   }
+  
+   .section-tres .comentarios{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 35%;
+ }
+ 
+ .section-tres .comentarios figure figcaption{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    padding: 15px 0;
+    align-self: center;
+    text-align: center;
+ }
+ 
+ .section-tres .comentarios iframe.p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    color: #000000;
+    padding-bottom: 10px;
+    background-image: url(../imagenes/background-blue.webp);
+    align-self: center;
+}
+
+.fotos__titulo{
+   text-align: right;
+   font-size: xx-large;
+}
+.fotos .articulo{
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+}
+.fotos .articulo figure{
+   text-align: center;
+   width: 25%;
+}
+.fotos .articulo figure img{
+   width: 100%;
+}
+
+.fotos .articulo figure figcaption{
+   font-size: large;
+   color: black;
+}
+
+.producto__titulo{
+   text-align: left;
+   font-size: xx-large;
+}
+
+.pie{
+    text-align: center;
+    padding: 6px 20px;
+ }
+ 
+ .pie__icon--sm{
+    width: 35px;
+ }
+ 
+ .pie__titulo--md{
+    font-size: 3.5rem;
+ }
